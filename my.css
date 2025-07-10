@@ -1,239 +1,153 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-#container{
-    width: 100%;
-    height: 100vh;
-    position: relative;
+body {
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+.banner {
+    background-image: url('./images/flat-lay-arrangement-desk-elements-with-copy-space (2).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 20px;
 }
-.banner{
-    background-image: url(./images/flat-lay-arrangement-desk-elements-with-copy-space\ \(2\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-nav{
-     margin: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 600px;
-}
 
-.list-items{
+/* Align nav items to the left */
+nav ul {
     list-style: none;
-    display: inline;
-    margin: 0px 20px;
+    display: flex;
+    justify-content: flex-start;
+    /* Align items to the left */
+    gap: 30px;
+    margin-left: 50px;
 }
 
-.links{
+
+nav a {
     text-decoration: none;
-    font-weight: 600;
     color: black;
-    
+    font-weight: 600;
 }
 
-.links:hover{
-    text-decoration: underline;
-    color: white;
+nav a:hover {
+    color: #4e6ef2;
 }
 
-.home-img{
-    width: 10%;
-    height: 20%;
-    position: absolute;
-}
-
-.group1{
-    position: absolute;
-    height: 100%;
-    left: 300px;
+.home-section {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: rgb(48, 63, 3);
+    justify-content: flex-start;
+    padding: 60px 0;
+    gap: 40px;
+}
+
+.home-img img {
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
+    border: 5px solid black;
 }
-.home-content{
-     margin: 12% 0px 0px 8%;
+
+.home-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: left;
 }
-#username{
-    font-size: 30px;
-    margin-bottom: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.home-content span {
+    color: #4e6ef2;
 }
-#lname{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
+
+.home-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: left;
 }
-#user-details{
-    line-height: 1.1;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 29px;
-    margin-left: 100px;
-    margin-top:-40px ;
-}
-#download{
-    text-decoration: none;
+
+.home-content a {
     background-color: black;
     color: white;
-    padding: 10px;
-    margin-top: 20px;
-    border-radius: 10px;
-    display: inline-block;
-    margin-left: 150px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
-
-#About{
-  margin: 10% 30% 0px 5%;
-}
-
-.SectionHead{
-    align-items: center;
-    
-}
-
-.Mainhead{
-    font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    align-items: center ;
-    margin-left: 300px;
-}
-
-.AboutBody{
-    margin-top: 20px;
-    grid-template-columns: repeat(2,1fr); 
-    align-items: center;
-}
-
-.aboutcontent{
-    font-size: 19px;
-  font-family: Arial, Helvetica, sans-serif;
-
-}
-#skill{
-    margin: 10% 8% 5% 8% ;
-    padding-left: -500px;
-}
-    
-
-.skillcontent{
-    align-items: center;
-    gap: 2rem;
-    box-sizing: border-box;
-    display: flex;
-    padding: 20px;
-    border-radius: 50%;
-    margin: 20px;
-    margin-left: 200px;
-    
-    
-}
-
-#Contact{
-    margin-top: 50px;
+.about-section,
+.skills-section,
+.contact-section {
+    padding: 50px 100px;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     background-image: url(images/WhatsApp\ Image\ 2025-07-10\ at\ 1.34.55\ PM.jpeg);
-     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 20px;
 }
 
-
-.information{
-    margin-top: 1.2rem;
-    
-}
-
-
-.infobox{
+.about-section h2,
+.skills-section h2,
+.contact-section h2 {
+    font-size: 28px;
     margin-bottom: 20px;
-    align-items: center;
-    display: flex;
-    margin-left: 900px;
-    background-color: rgb(227, 195, 121);
 }
 
-
-.IconCollection{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-}
-.icon{
-    width: 20px;
-    height: 50px;
-    border-radius: 50%;
-    /* background-color: aquamarine; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 0px 20px;
-
+.about-section p {
+    font-size: 18px;
 }
 
-.brands{
-    color: black ;
-    font-size: 2rem;
-    align-items: center;
+.skills-list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
 }
-a{
-     text-decoration: none;
-    font-weight: 600;
+
+.skills-list span {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a {
     color: black;
-    
-}
-    
-footer{
-    margin-top: 8%;
-    background-color: rgb(237, 219, 106);
-    padding: 30px;
-
+    font-size: 24px;
+    transition: color 0.3s;
 }
 
-.upArrow{
-    float: right;
-    margin: -30px 20px 20px 0px;
+.social-icons a:hover {
+    color: #4e6ef2;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar{
-    width: 10px;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-track{
-    background-color: bisque;
-}
-
-::-webkit-scrollbar-thumb{
-    background-color: rgb(128, 90, 0);
-    border-radius: 10px;
-}
-.wishes{
-    margin-left: 700px;
-    font-family: 'Courier New', Courier, monospace;
-}
-h2.about {
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
     position: relative;
-   
-    top: 69px;
-    left: -275px;
 }
-.aboutMe{
-  position: absolute; 
-  left: -17px;
-  bottom: 70px; 
+
+footer a {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 20px;
 }
