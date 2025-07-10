@@ -87,6 +87,7 @@ nav{
     margin-left: 150px;
 }
 
+
 #About{
   margin: 10% 30% 0px 5%;
 }
@@ -116,7 +117,7 @@ nav{
 }
 #skill{
     margin: 10% 8% 5% 8% ;
-    padding-left: 250px;
+    padding-left: -500px;
 }
     
 
@@ -224,4 +225,15 @@ html{
 .wishes{
     margin-left: 700px;
     font-family: 'Courier New', Courier, monospace;
+}
+h2.about {
+    position: relative;
+   
+    top: 69px;
+    left: -275px;
+}
+.aboutMe{
+  position: absolute; 
+  left: -17px;
+  bottom: 70px; 
 }
